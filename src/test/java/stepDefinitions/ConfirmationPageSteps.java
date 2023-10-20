@@ -1,9 +1,9 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
 import cucumber.TestContext;
-import cucumber.api.java.en.Then;
 import enums.Context;
 import pageObjects.ConfirmationPage;
 

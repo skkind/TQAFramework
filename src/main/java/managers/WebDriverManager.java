@@ -12,7 +12,7 @@ public class WebDriverManager {
 	private WebDriver driver;
 	private static DriverType driverType;
 	private static EnvironmentType environmentType;
-	private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
+//	private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
 	
 	public WebDriverManager() {
 		driverType = FileReaderManager.getInstance().getConfigReader().getBrowser();
@@ -43,7 +43,7 @@ public class WebDriverManager {
         case FIREFOX : driver = new FirefoxDriver();
 	    	break;
         case CHROME : 
-        	System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());
+//        	System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());
         	driver = new ChromeDriver();
     		break;
         case INTERNETEXPLORER : driver = new InternetExplorerDriver();
